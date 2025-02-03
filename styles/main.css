@@ -1,0 +1,150 @@
+/* Ogólne ustawienia */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Nagłówek */
+header {
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: #e50914;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #e50914;
+}
+
+/* Hero Section */
+#hero {
+    height: 80vh;
+    background: url('images/hero.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero .hero-content h2 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+#hero .hero-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#hero .hero-content button:hover {
+    background-color: #d40812;
+}
+
+/* Kategorie Wyścigowe */
+#categories {
+    padding: 20px;
+    background-color: #121212;
+    color: #fff;
+}
+
+#categories h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    overflow-x: auto; /* Włączenie przewijania poziomego */
+    gap: 10px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.grid::-webkit-scrollbar-thumb {
+    background-color: #e50914;
+    border-radius: 10px;
+}
+
+.grid::-webkit-scrollbar-track {
+    background-color: #1c1c1c;
+}
+
+.card {
+    min-width: calc(33.33% - 10px); /* Szerokość karty dla wyświetlenia 3 jednocześnie */
+    max-width: calc(33.33% - 10px);
+    background-color: #1c1c1c;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    flex-shrink: 0; /* Zapobieganie zmniejszaniu kart */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none; /* Usuwa podkreślenie z linków */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #e50914;
+    color: #fff;
+}
+
+.card h4, .card p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1c1c1c;
+    color: #e50914;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .social-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #e50914;
+}
+

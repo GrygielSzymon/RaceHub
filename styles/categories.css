@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: #e50914;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #e50914;
+}
+
+#categories {
+    padding: 20px;
+    background-color: #121212;
+    color: #fff;
+}
+
+#categories h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolumny */
+    grid-gap: 15px;
+    justify-items: center;
+}
+
+.card {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    width: 100%;
+    max-width: 565px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #e50914;
+    color: #fff;
+}
+
+.card h4, .card p {
+    margin: 0;
+    padding: 5px 0;
+}
+.card h4 {
+    color: #e50914;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1c1c1c;
+    color: #e50914;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .social-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #e50914;
+}
