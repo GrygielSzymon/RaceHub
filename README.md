@@ -73,4 +73,3 @@ Aby uruchomić RaceHub lokalnie:
 📧 szymongrygiel11@gmail.com  
 
 Jeśli podoba Ci się projekt, zostaw ⭐ star na GitHubie! 🚀  
-```
