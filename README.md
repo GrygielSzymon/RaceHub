@@ -10,7 +10,7 @@ RaceHub to strona internetowa poświęcona motoryzacji i wyścigom, oferująca:
 ---
 
 ## 📸 Podgląd strony
-![RaceHub Screenshot](images/screenshot.png)
+![RaceHub Screenshot](assets/screenshot.png)
 
 ---
 
