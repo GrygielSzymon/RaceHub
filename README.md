@@ -34,6 +34,7 @@ RaceHub/
 │   ├── script.js        # Główne funkcje interaktywne
 │── index.html           # Strona główna
 │── categories.html      # Kategorie wyścigowe
+│── tracks.html          # Tory wyścigowe
 │── quiz.html            # Strona quizów
 │── mods.html            # Sekcja z modami
 │── about.html           # O stronie
