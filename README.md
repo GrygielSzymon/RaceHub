@@ -32,11 +32,14 @@ RaceHub/
 │   ├── main.css         # Główny plik stylów
 │── js/                  # Skrypty JavaScript
 │   ├── script.js        # Główne funkcje interaktywne
+│── categories/          # Kategorie wyścigowe
+│   ├── ...              # Strony kategorii
+│── tracks/              # Tory wyścigowe
+│   ├── ...              # Strony torów
 │── index.html           # Strona główna
 │── categories.html      # Kategorie wyścigowe
 │── tracks.html          # Tory wyścigowe
 │── quiz.html            # Strona quizów
-│── mods.html            # Sekcja z modami
 │── about.html           # O stronie
 │── README.md            # Dokumentacja projektu
 ```
