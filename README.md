@@ -3,7 +3,6 @@
 RaceHub to strona internetowa poświęcona motoryzacji i wyścigom, oferująca:  
 ✅ Informacje o torach i samochodach  
 ✅ Kategorie wyścigowe: F1, GT, Drift, Drag, Rally i inne  
-✅ Modyfikacje do gier wyścigowych  
 ✅ Quizy testujące wiedzę o torach i motorsporcie  
 ✅ Rankingi kierowców i najlepszych czasów  
 
@@ -68,7 +67,6 @@ Aby uruchomić RaceHub lokalnie:
 🔹 Dodanie panelu użytkownika i systemu logowania  
 🔹 Zaawansowany ranking najlepszych wyników quizów  
 🔹 Integracja z API (np. live wyniki F1)  
-🔹 Więcej modów i poradników dla graczy  
 
 ---
 
