@@ -1,271 +1,271 @@
 /* Ogólne ustawienia */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: #000;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #000;
 }
 
 /* Nagłówek */
 header {
-    background-color: #1c1c1c;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    /* Zapewni, że nagłówek zmieści się na mniejszych ekranach */
+  background-color: #1c1c1c;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Zapewni, że nagłówek zmieści się na mniejszych ekranach */
 }
 
 header .logo h1 {
-    color: #e50914;
+  color: #e50914;
 }
 
 header .logo h1 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #e50914;
+  color: #e50914;
 }
 
 /* Hero Section - wideo w tle */
 #hero {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
 }
 
 #hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .hero-content {
-    position: relative;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .hero-content h2 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 .hero-content a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .hero-content button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #e50914;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1em;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
 }
 
 .hero-content button:hover {
-    background-color: #d40812;
+  background-color: #d40812;
 }
 
 /* Kategorie Wyścigowe */
 #categories {
-    padding: 20px;
-    background-color: #121212;
-    color: #fff;
+  padding: 20px;
+  background-color: #121212;
+  color: #fff;
 }
 
 #categories h3 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .grid {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    padding: 10px;
-    scroll-behavior: smooth;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scroll-behavior: smooth;
 }
 
 .grid::-webkit-scrollbar {
-    height: 6px;
+  height: 6px;
 }
 
 .grid::-webkit-scrollbar-thumb {
-    background-color: #e50914;
-    border-radius: 10px;
+  background-color: #e50914;
+  border-radius: 10px;
 }
 
 .grid::-webkit-scrollbar-track {
-    background-color: #1c1c1c;
+  background-color: #1c1c1c;
 }
 
 .card {
-    min-width: calc(33.33% - 10px);
-    max-width: calc(33.33% - 10px);
-    background-color: #1c1c1c;
-    color: #fff;
-    border: 1px solid #333;
-    border-radius: 8px;
-    text-align: center;
-    padding: 15px;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-decoration: none;
+  min-width: calc(33.33% - 10px);
+  max-width: calc(33.33% - 10px);
+  background-color: #1c1c1c;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    background-color: #e50914;
-    color: #fff;
+  transform: scale(1.05);
+  background-color: #e50914;
+  color: #fff;
 }
 
 .card h4,
 .card p {
-    margin: 0;
-    padding: 5px 0;
+  margin: 0;
+  padding: 5px 0;
 }
 
 /* Stopka */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #1c1c1c;
-    color: #e50914;
+  text-align: center;
+  padding: 10px;
+  background-color: #1c1c1c;
+  color: #e50914;
 }
 
 footer .social-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 footer .social-links a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 footer .social-links a:hover {
-    color: #e50914;
+  color: #e50914;
 }
 
 /* Responsywność */
 
 /* Na ekranach mniejszych niż 768px */
 @media (max-width: 767px) {
-    header {
-        flex-direction: column;
-        /* Nagłówek będzie kolumną na małych ekranach */
-        align-items: flex-start;
-    }
+  header {
+    flex-direction: column;
+    /* Nagłówek będzie kolumną na małych ekranach */
+    align-items: flex-start;
+  }
 
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
 
-    nav ul li {
-        margin-bottom: 10px;
-    }
+  nav ul li {
+    margin-bottom: 10px;
+  }
 
-    #hero {
-        height: 60vh;
-        /* Zmniejszamy wysokość hero na telefonach */
-    }
+  #hero {
+    height: 60vh;
+    /* Zmniejszamy wysokość hero na telefonach */
+  }
 
-    .hero-content h2 {
-        font-size: 1.8em;
-        /* Mniejszy tekst w hero */
-    }
+  .hero-content h2 {
+    font-size: 1.8em;
+    /* Mniejszy tekst w hero */
+  }
 
-    .grid {
-        flex-direction: column;
-        gap: 20px;
-        overflow: visible;
-        /* Usuwamy poziome przewijanie na małych ekranach */
-    }
+  .grid {
+    flex-direction: column;
+    gap: 20px;
+    overflow: visible;
+    /* Usuwamy poziome przewijanie na małych ekranach */
+  }
 
-    .card {
-        min-width: 100%;
-        max-width: 100%;
-        /* Karty będą miały pełną szerokość */
-    }
+  .card {
+    min-width: 100%;
+    max-width: 100%;
+    /* Karty będą miały pełną szerokość */
+  }
 }
 
 /* Na tabletach i większych ekranach (min-width: 768px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .grid {
-        flex-direction: row;
-        gap: 15px;
-        overflow-x: auto;
-    }
+  .grid {
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: auto;
+  }
 
-    .card {
-        min-width: calc(50% - 10px);
-        /* Karty będą miały 50% szerokości */
-        max-width: calc(50% - 10px);
-    }
+  .card {
+    min-width: calc(50% - 10px);
+    /* Karty będą miały 50% szerokości */
+    max-width: calc(50% - 10px);
+  }
 
-    #hero {
-        height: 70vh;
-        /* Hero section będzie miało trochę większą wysokość na tabletach */
-    }
+  #hero {
+    height: 70vh;
+    /* Hero section będzie miało trochę większą wysokość na tabletach */
+  }
 }
 
 /* Na ekranach większych niż 1024px (laptopy/komputery) */
 @media (min-width: 1024px) {
-    .grid {
-        flex-direction: row;
-        gap: 20px;
-    }
+  .grid {
+    flex-direction: row;
+    gap: 20px;
+  }
 
-    .card {
-        min-width: calc(33.33% - 20px);
-        /* Karty mają 1/3 szerokości na dużych ekranach */
-        max-width: calc(33.33% - 20px);
-    }
+  .card {
+    min-width: calc(33.33% - 20px);
+    /* Karty mają 1/3 szerokości na dużych ekranach */
+    max-width: calc(33.33% - 20px);
+  }
 
-    #hero {
-        height: 80vh;
-        /* Hero section na pełną wysokość na dużych ekranach */
-    }
+  #hero {
+    height: 80vh;
+    /* Hero section na pełną wysokość na dużych ekranach */
+  }
 
-    .hero-content h2 {
-        font-size: 3em;
-        /* Większy nagłówek w hero */
-    }
+  .hero-content h2 {
+    font-size: 3em;
+    /* Większy nagłówek w hero */
+  }
 }

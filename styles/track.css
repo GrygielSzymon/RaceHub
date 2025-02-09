@@ -42,7 +42,7 @@ nav ul li a:hover {
 
 /* Sekcja zawartości */
 .content {
-  max-width: 900px;
+  max-width: 900px; /* zmiana maksymalnej szerokości na 900px */
   margin: 20px auto;
   padding: 20px;
   background-color: #121212;
@@ -53,26 +53,26 @@ nav ul li a:hover {
 .content h3 {
   text-align: center;
   color: #e50914;
-  font-size: 2rem;
+  font-size: 2rem; /* Powiększenie nagłówka */
 }
 
 .content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.1rem; /* Zwiększenie czcionki w paragrafach */
+  line-height: 1.6; /* Zwiększenie interlinii */
 }
 
 .content h4 {
   color: #e50914;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Powiększenie nagłówka */
 }
 
 .content ul {
-  padding-left: 20px;
+  padding-left: 20px; /* zmiana wcięcia listy na 20px */
 }
 
 .content li {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.1rem; /* Zwiększenie czcionki w liście */
+  line-height: 1.6; /* Zwiększenie interlinii */
 }
 
 /* Stopka */
@@ -122,11 +122,11 @@ footer .social-links a:hover {
   }
 
   .content h3 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Mniejsze nagłówki na małych ekranach */
   }
 
   .content p {
-    font-size: 1rem;
+    font-size: 1rem; /* Mniejsza czcionka na małych ekranach */
   }
 }
 
