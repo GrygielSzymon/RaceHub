@@ -18,7 +18,6 @@ RaceHub to strona internetowa poświęcona motoryzacji i wyścigom, oferująca:
 🔹 Dynamiczne karty kategorii (przesuwanie, responsywność)  
 🔹 Moduł quizów o torach, autach i motorsporcie  
 🔹 Baza wiedzy o autach i torach  
-🔹 Sekcja z modyfikacjami do gier  
 🔹 Nowoczesny design i ciemny motyw  
 
 ---
