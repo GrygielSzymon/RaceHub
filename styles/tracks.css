@@ -1,4 +1,4 @@
-/* Ogólne ustawienia */
+/* 🔹 Ogólne ustawienia */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,10 +6,10 @@ body {
   background-color: #000;
 }
 
-/* Nagłówek */
+/* 🔹 Nagłówek */
 header {
   background-color: #1c1c1c;
-  padding: 10px 20px;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +18,7 @@ header {
 
 header .logo h1 {
   color: #e50914;
+  margin: 0;
 }
 
 header .logo h1 a {
@@ -29,18 +30,22 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
   color: #e50914;
 }
 
-/* Sekcja torów */
+/* 🔹 Sekcja torów */
 section {
   padding: 30px;
   background-color: #121212;
@@ -51,47 +56,104 @@ section h3 {
   margin-bottom: 20px;
   font-size: 28px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Stylizacja sortowania */
+/* Kontener sortowania */
 .sorting-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px;
-}
-
-.sorting-container label {
-  margin-right: 10px;
-  font-size: 18px;
-}
-
-.sorting-container select {
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #333;
-  border-radius: 5px;
+  gap: 15px;
   background-color: #1c1c1c;
+  padding: 15px;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 20px 0;
+}
+
+/* Stylizacja etykiet */
+.sorting-container label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Stylizacja select */
+.sorting-container select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #282828;
   color: #fff;
   cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  align-items: center;
+}
+
+.sorting-container select:hover {
+  border-color: #e50914;
 }
 
 .sorting-container select:focus {
   outline: none;
   border-color: #e50914;
+  background-color: #333;
 }
 
-/* Siatka kart torów */
+/* Stylizacja drugiego selecta */
+#subFilterContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  background-color: #1c1c1c;
+  padding: 15px;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 20px 0;
+}
+#subFilterContainer label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Stylizacja select */
+#subFilterContainer select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #282828;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#subFilterContainer select:hover {
+  border-color: #e50914;
+}
+
+#subFilterContainer select:focus {
+  outline: none;
+  border-color: #e50914;
+  background-color: #333;
+}
+
+
+/* 🔹 Siatka kart torów */
 .grid {
   display: grid;
-  gap: 10px;
-  padding: 10px;
+  gap: 15px;
+  padding: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Karty torów */
+/* 🔹 Karty torów */
 .card {
   background-color: #1c1c1c;
   color: #fff;
@@ -99,7 +161,6 @@ section h3 {
   border-radius: 8px;
   text-align: center;
   padding: 15px;
-  cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
   text-decoration: none;
 }
@@ -118,7 +179,7 @@ section h3 {
   color: #fff;
 }
 
-/* Stopka */
+/* 🔹 Stopka */
 footer {
   text-align: center;
   padding: 15px;
@@ -143,7 +204,21 @@ footer .social-links a:hover {
   color: #e50914;
 }
 
-/* Responsywność */
+/* 🔹 Responsywność */
+@media (max-width: 600px) {
+  .sorting-container {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  #subFilterContainer {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -170,12 +245,7 @@ footer .social-links a:hover {
     grid-template-columns: 1fr;
   }
 
-  .sorting-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .sorting-container label {
-    margin-bottom: 5px;
+  .sort-container {
+    width: 100%;
   }
 }
