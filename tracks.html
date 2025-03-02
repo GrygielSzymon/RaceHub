@@ -22,7 +22,7 @@
           <li><a href="tracks.html">Tory</a></li>
           <!-- <li><a href="#mods">Mody</a></li> -->
           <li><a href="#quiz">Quizy</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
         </ul>
       </nav>
     </div>
@@ -31,33 +31,35 @@
   <main>
     <section id="allTracks">
       <h3>Tory Wyścigowe</h3>
-       <!-- 🔹 Główne sortowanie -->
+      <!-- 🔹 Główne sortowanie -->
       <div class="sorting-container">
         <label for="mainFilter">Sortuj według:</label>
         <select id="mainFilter">
-            <option value="all">Wszystkie</option>
-            <option value="category">Kategoria</option>
-            <option value="country">Kraj</option>
-            <option value="length">Długość</option>
+          <option value="all">Wszystkie</option>
+          <option value="category">Kategoria</option>
+          <option value="country">Kraj</option>
+          <option value="length">Długość</option>
         </select>
       </div>
 
-       <!-- 🔹 Drugie sortowanie (dynamiczne) -->
-       <div id="subFilterContainer" style="display: none;">
-           <label for="subFilter">Wybierz:</label>
-           <select id="subFilter"></select>
-       </div>
+      <!-- 🔹 Drugie sortowanie (dynamiczne) -->
+      <div id="subFilterContainer" style="display: none;">
+        <label for="subFilter">Wybierz:</label>
+        <select id="subFilter"></select>
+      </div>
 
       <div class="grid">
-        <a href="tracks/silverstoneCircuit.html" class="card" data-categories="GT4" data-country = "Wielka Brytania" data-length="5.891">
+        <a href="tracks/silverstoneCircuit.html" class="card" data-categories="GT4" data-country="Wielka Brytania"
+          data-length="5.891">
           <h4>Silverstone Circuit</h4>
           <p>Historyczny tor w sercu Anglii, pełen emocji.</p>
         </a>
-        <a href="tracks/monza.html" class="card" data-categories="F1,GT4" data-country = "Włochy" data-length="5.793">
+        <a href="tracks/monza.html" class="card" data-categories="F1,GT4" data-country="Włochy" data-length="5.793">
           <h4>Autódromo Nazionale Monza</h4>
           <p>Tor pełen historii, szybki i intensywny.</p>
         </a>
-        <a href="tracks/mountPanoramaCircuit.html" class="card" data-categories="GT4, GT3" data-country="Australia" data-length="6.213">
+        <a href="tracks/mountPanoramaCircuit.html" class="card" data-categories="GT4, GT3" data-country="Australia"
+          data-length="6.213">
           <h4>Mount Panorama Circuit</h4>
           <p>Słynna wznosząca się droga, pełna adrenaliny.</p>
         </a>
@@ -65,43 +67,53 @@
           <h4>Circuit de Spa-Francorchamps</h4>
           <p>Ikoniczny belgijski tor, pełen wyzwań.</p>
         </a>
-        <a href="tracks/ebisuCircut.html" class="card" data-categories="Drift" data-country="Japonia" data-length="2.000">
+        <a href="tracks/ebisuCircut.html" class="card" data-categories="Drift" data-country="Japonia"
+          data-length="2.000">
           <h4>Ebisu Circuit</h4>
           <p>Mekką driftu, miejsce kultowych wydarzeń driftowych.</p>
         </a>
-        <a href="tracks/longBeach.html" class="card" data-categories="Drift" data-country="Stany Zjednoczone" data-length="3.167">
+        <a href="tracks/longBeach.html" class="card" data-categories="Drift" data-country="Stany Zjednoczone"
+          data-length="3.167">
           <h4>Formula Drift – Long Beach</h4>
           <p>Ikona driftu w Stanach Zjednoczonych, niezwykle techniczna.</p>
         </a>
-        <a href="tracks/osakaDriftCircuit.html" class="card" data-categories="Drift" data-country="Japonia" data-length="1.000">
+        <a href="tracks/osakaDriftCircuit.html" class="card" data-categories="Drift" data-country="Japonia"
+          data-length="1.000">
           <h4>Osaka Drift Circuit</h4>
           <p>Niezwykle trudny tor z licznymi zakrętami.</p>
         </a>
-        <a href="tracks/irwindaleSpidway.html" class="card" data-categories="Drift" data-country="Stany Zjednoczone" data-length="0.500">
+        <a href="tracks/irwindaleSpidway.html" class="card" data-categories="Drift" data-country="Stany Zjednoczone"
+          data-length="0.500">
           <h4>Irwindale Speedway</h4>
           <p>Amerykański tor driftowy, gospodarzy wielu zawodów.</p>
         </a>
-        <a href="tracks/circuitDeMonaco.html" class="card" data-categories="F1" data-country="Monako" data-length="3.337">
+        <a href="tracks/circuitDeMonaco.html" class="card" data-categories="F1" data-country="Monako"
+          data-length="3.337">
           <h4>Circuit de Monaco</h4>
           <p>Urokliwy tor w sercu Monako, wyjątkowy i wąski.</p>
         </a>
-        <a href="tracks/autodromoHermanosRodriguez.html" class="card" data-categories="F1" data-country="Meksyk" data-length="4.304">
+        <a href="tracks/autodromoHermanosRodriguez.html" class="card" data-categories="F1" data-country="Meksyk"
+          data-length="4.304">
           <h4>Autódromo Hermanos Rodríguez</h4>
           <p>Zróżnicowany tor, pełen intensywnej rywalizacji.</p>
         </a>
-        <a href="tracks/circuitDeLaSarthe.html" class="card" data-categories="GT1" data-country="Francja" data-length="13.629">
+        <a href="tracks/circuitDeLaSarthe.html" class="card" data-categories="GT1" data-country="Francja"
+          data-length="13.629">
           <h4>Circuit de la Sarthe (Le Mans)</h4>
           <p>Kultowy tor 24h Le Mans, wymagający i legendarny.</p>
         </a>
-        <a href="tracks/nurburgringNordschleife.html" class="card" data-categories="GT1" data-country="Niemcy" data-length="20.832">
+        <a href="tracks/nurburgringNordschleife.html" class="card" data-categories="GT1" data-country="Niemcy"
+          data-length="20.832">
           <h4>Nürburgring Nordschleife</h4>
           <p>Najtrudniejszy tor świata, "Zielone Piekło".</p>
         </a>
-        <a href="tracks/algarveInternationalCircuit.html" class="card" data-categories="GT1" data-country="Portugalia" data-length="4.684">
+        <a href="tracks/algarveInternationalCircuit.html" class="card" data-categories="GT1" data-country="Portugalia"
+          data-length="4.684">
           <h4>Algarve International Circuit (Portimão)</h4>
           <p> Nowoczesny tor z wieloma wzniesieniami i technicznymi zakrętami.</p>
         </a>
-        <a href="tracks/yasMarinaCircuit.html" class="card" data-categories="GT1" data-country="Zjednoczone Emiraty Arabskie" data-length="5.554">
+        <a href="tracks/yasMarinaCircuit.html" class="card" data-categories="GT1"
+          data-country="Zjednoczone Emiraty Arabskie" data-length="5.554">
           <h4>Yas Marina Circuit</h4>
           <p>Luksusowy tor, nocne wyścigi i unikalna sceneria.</p>
         </a>
@@ -113,7 +125,8 @@
           <h4>Paul Ricard</h4>
           <p>Nowoczesny tor z długimi prostymi i szybkimi zakrętami.</p>
         </a>
-        <a href="tracks/lagunaSeca.html" class="card" data-categories="GT2" data-country="Stany Zjednoczone" data-length="3.601">
+        <a href="tracks/lagunaSeca.html" class="card" data-categories="GT2" data-country="Stany Zjednoczone"
+          data-length="3.601">
           <h4>Laguna Seca</h4>
           <p>Znany z ikonicznego zakrętu Corkscrew.</p>
         </a>
@@ -121,39 +134,48 @@
           <h4>Kyalami Grand Prix Circuit</h4>
           <p>Ikoniczny tor w Afryce, techniczny i wymagający.</p>
         </a>
-        <a href="tracks/suzukaCircuit.html" class="card" data-categories="GT3" data-country="Japonia" data-length="5.807">
+        <a href="tracks/suzukaCircuit.html" class="card" data-categories="GT3" data-country="Japonia"
+          data-length="5.807">
           <h4>Suzuka Circuit</h4>
           <p>Unikalny tor w kształcie ósemki, szybki i techniczny.</p>
         </a>
-        <a href="tracks/indianapolisRacewayPark.html" class="card" data-categories="Drag" data-country="Stany Zjednoczone" data-length="0.402">
+        <a href="tracks/indianapolisRacewayPark.html" class="card" data-categories="Drag"
+          data-country="Stany Zjednoczone" data-length="0.402">
           <h4>Indianapolis Raceway Park</h4>
           <p>Kultowy tor NHRA, gospodarzem US Nationals.</p>
         </a>
-        <a href="tracks/santaPodRaceway.html" class="card" data-categories="Drag" data-country="Wielka Brytania" data-length="0.402">
+        <a href="tracks/santaPodRaceway.html" class="card" data-categories="Drag" data-country="Wielka Brytania"
+          data-length="0.402">
           <h4>Santa Pod Raceway</h4>
           <p>Najsłynniejszy tor drag w Europie.</p>
         </a>
-        <a href="tracks/bahrainInternationalCircuit–DragStrip.html" class="card" data-categories="Drag" data-country="Bahrajn" data-length="0.400">
+        <a href="tracks/bahrainInternationalCircuit–DragStrip.html" class="card" data-categories="Drag"
+          data-country="Bahrajn" data-length="0.400">
           <h4>Bahrain International Circuit – Drag Strip</h4>
           <p>Nowoczesny tor drag racingowy na Bliskim Wschodzie.</p>
         </a>
-        <a href="tracks/sydneyDragway.html" class="card" data-categories="Drag" data-country="Australia" data-length="0.400">
+        <a href="tracks/sydneyDragway.html" class="card" data-categories="Drag" data-country="Australia"
+          data-length="0.400">
           <h4>Sydney Dragway</h4>
           <p>Najlepszy tor drag racingowy w Australii.</p>
         </a>
-        <a href="tracks/colDeTurini.html" class="card" data-categories="Rally,WRC" data-country="Francja" data-length="15.000">
+        <a href="tracks/colDeTurini.html" class="card" data-categories="Rally,WRC" data-country="Francja"
+          data-length="15.000">
           <h4>Col de Turini (Rajd Monte Carlo)</h4>
           <p>Legendarna górska droga, śnieg i asfalt.</p>
         </a>
-        <a href="tracks/ouninpohja.html" class="card" data-categories="Rally,WRC" data-country="Finlandia" data-length="33.000">
+        <a href="tracks/ouninpohja.html" class="card" data-categories="Rally,WRC" data-country="Finlandia"
+          data-length="33.000">
           <h4>Ouninpohja (Rajd Finlandii)</h4>
           <p>Najszybszy odcinek WRC, wielkie hopy.</p>
         </a>
-        <a href="tracks/elCondor.HTML" class="card" data-categories="Rally,WRC" data-country="Argentyna" data-length="16.000">
+        <a href="tracks/elCondor.HTML" class="card" data-categories="Rally,WRC" data-country="Argentyna"
+          data-length="16.000">
           <h4>El Condor (Rajd Argentyny)</h4>
           <p>Kamieniste drogi, mgła i tłumy kibiców.</p>
         </a>
-        <a href="tracks/lousada.html" class="card" data-categories="Rally,WRC" data-country="Portugalia" data-length="1.500">
+        <a href="tracks/lousada.html" class="card" data-categories="Rally,WRC" data-country="Portugalia"
+          data-length="1.500">
           <h4>Lousada (Rajd Portugalii – Super Special Stage)</h4>
           <p>Widowiskowy tor rallycrossowy w WRC.</p>
         </a>
