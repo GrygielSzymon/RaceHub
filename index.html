@@ -1,99 +1,101 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RaceHub - Twoje Centrum Wyścigowe</title>
-    <link rel="stylesheet" href="styles/main.css" />
-    <script src="scripts/scroll.js"></script>
-  </head>
 
-  <body>
-    <!-- Nagłówek -->
-    <header>
-      <div class="container">
-        <div class="logo">
-          <h1>RaceHub</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="categories.html">Kategorie</a></li>
-            <li><a href="tracks.html">Tory</a></li>
-            <!-- <li><a href="#mods">Mody</a></li> -->
-            <li><a href="#quiz">Quizy</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RaceHub - Twoje Centrum Wyścigowe</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="scripts/scroll.js"></script>
+</head>
+
+<body>
+  <!-- Nagłówek -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>RaceHub</h1>
       </div>
-    </header>
+      <nav>
+        <ul>
+          <li><a href="categories.html">Kategorie</a></li>
+          <li><a href="tracks.html">Tory</a></li>
+          <!-- <li><a href="#mods">Mody</a></li> -->
+          <li><a href="quizzes.html">Quizy</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Sekcja Hero -->
-    <section id="hero">
-      <video autoplay muted loop id="hero-video">
-        <source src="assets/hero.mp4" type="video/mp4" />
-        Twoja przeglądarka nie obsługuje wideo.
-      </video>
-      <div class="hero-content">
-        <h2>Twoje Centrum Wyścigowe</h2>
-        <p>Odkryj tory, samochody i testuj swoją wiedzę o wyścigach!</p>
-        <button><a href="categories.html">Poznaj Kategorie</a></button>
-        <button><a href="tracks.html">Odkryj Tory</a></button>
-      </div>
-    </section>
+  <!-- Sekcja Hero -->
+  <section id="hero">
+    <video autoplay muted loop id="hero-video">
+      <source src="assets/hero.mp4" type="video/mp4" />
+      Twoja przeglądarka nie obsługuje wideo.
+    </video>
+    <div class="hero-content">
+      <h2>Twoje Centrum Wyścigowe</h2>
+      <p>Odkryj tory, samochody i testuj swoją wiedzę o wyścigach!</p>
+      <button><a href="categories.html">Poznaj Kategorie</a></button>
+      <button><a href="tracks.html">Odkryj Tory</a></button>
+    </div>
+  </section>
 
-    <!-- Sekcja Kategorie -->
-    <section id="categories">
-      <h3>Kategorie Wyścigowe</h3>
-      <div class="grid">
-        <a href="categories/gt4.html" class="card">
-          <h4>GT4</h4>
-          <p>Klasa GT z mocą i stylem.</p>
-        </a>
+  <!-- Sekcja Kategorie -->
+  <section id="categories">
+    <h3>Kategorie Wyścigowe</h3>
+    <div class="grid">
+      <a href="categories/gt4.html" class="card">
+        <h4>GT4</h4>
+        <p>Klasa GT z mocą i stylem.</p>
+      </a>
 
-        <a href="categories/drift.html" class="card">
-          <h4>Drift</h4>
-          <p>Precyzyjne kontrolowanie pojazdu w poślizgu.</p>
-        </a>
+      <a href="categories/drift.html" class="card">
+        <h4>Drift</h4>
+        <p>Precyzyjne kontrolowanie pojazdu w poślizgu.</p>
+      </a>
 
-        <a href="categories/f1.html" class="card">
-          <h4>F1</h4>
-          <p>Formuła 1 to królowa wyścigów samochodowych.</p>
-        </a>
+      <a href="categories/f1.html" class="card">
+        <h4>F1</h4>
+        <p>Formuła 1 to królowa wyścigów samochodowych.</p>
+      </a>
 
-        <a href="categories/gt1.html" class="card">
-          <h4>GT1</h4>
-          <p>Potężne maszyny o wyjątkowej aerodynamice.</p>
-        </a>
+      <a href="categories/gt1.html" class="card">
+        <h4>GT1</h4>
+        <p>Potężne maszyny o wyjątkowej aerodynamice.</p>
+      </a>
 
-        <a href="categories/gt2.html" class="card">
-          <h4>GT2</h4>
-          <p>Balans mocy i precyzji w klasie GT.</p>
-        </a>
+      <a href="categories/gt2.html" class="card">
+        <h4>GT2</h4>
+        <p>Balans mocy i precyzji w klasie GT.</p>
+      </a>
 
-        <a href="categories/gt3.html" class="card">
-          <h4>GT3</h4>
-          <p>Popularne samochody wyścigowe dla wielu kierowców.</p>
-        </a>
+      <a href="categories/gt3.html" class="card">
+        <h4>GT3</h4>
+        <p>Popularne samochody wyścigowe dla wielu kierowców.</p>
+      </a>
 
-        <a href="categories/drag.html" class="card">
-          <h4>Drag</h4>
-          <p>Wyścigi na prostej z maksymalnym przyspieszeniem.</p>
-        </a>
+      <a href="categories/drag.html" class="card">
+        <h4>Drag</h4>
+        <p>Wyścigi na prostej z maksymalnym przyspieszeniem.</p>
+      </a>
 
-        <a href="categories/rally.html" class="card">
-          <h4>Rally</h4>
-          <p>Ekstremalne wyzwania na trasach szutrowych i asfaltowych.</p>
-        </a>
-      </div>
-    </section>
+      <a href="categories/rally.html" class="card">
+        <h4>Rally</h4>
+        <p>Ekstremalne wyzwania na trasach szutrowych i asfaltowych.</p>
+      </a>
+    </div>
+  </section>
 
-    <footer>
-      <p>© 2025 RaceHub - Wszystkie prawa zastrzeżone</p>
-      <ul class="social-links">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
-    </footer>
-  </body>
+  <footer>
+    <p>© 2025 RaceHub - Wszystkie prawa zastrzeżone</p>
+    <ul class="social-links">
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>
