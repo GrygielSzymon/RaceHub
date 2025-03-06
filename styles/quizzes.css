@@ -1,0 +1,146 @@
+/* Ogólne ustawienia */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  /* Nagłówek */
+  header {
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Zapewni, że nagłówek zmieści się na mniejszych ekranach */
+  }
+  
+  header .logo h1 {
+    color: #e50914;
+  }
+  
+  header .logo h1 a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #e50914;
+  }
+  
+  /* 🔹 Sekcja Quizów */
+  section {
+    padding: 30px;
+    background-color: #121212;
+  }
+  
+  section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* 🔹 Siatka kart Quizów */
+  .grid {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* 🔹 Karty Quizów */
+  .card {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #e50914;
+    color: #fff;
+  }
+  
+  .card h4 {
+    color: #e50914;
+  }
+  
+  .card:hover h4 {
+    color: #fff;
+  }
+  
+  /* 🔹 Stopka */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1c1c1c;
+    color: #e50914;
+  }
+  
+  footer .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .social-links a:hover {
+    color: #e50914;
+  }
+  
+  /* 🔹 Responsywność */
+  @media (max-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+  
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
