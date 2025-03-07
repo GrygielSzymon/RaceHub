@@ -21,7 +21,7 @@
           <li><a href="categories.html">Kategorie</a></li>
           <li><a href="tracks.html">Tory</a></li>
           <!-- <li><a href="#mods">Mody</a></li> -->
-          <li><a href="#quiz">Quizy</a></li>
+          <li><a href="quizzes.html">Quizy</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
       </nav>
@@ -59,38 +59,6 @@
       <li><a href="#">Twitter</a></li>
     </ul>
   </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.querySelector(".contact-form");
-
-      form.addEventListener("submit", async function (event) {
-        event.preventDefault(); // Blokuje domyślne wysyłanie formularza
-
-        const formData = new FormData(form);
-
-        try {
-          const response = await fetch("send_mail.php", {
-            method: "POST",
-            body: formData
-          });
-
-          const result = await response.text();
-
-          if (result.trim() === "success") {
-            alert("✅ Wiadomość wysłana pomyślnie!");
-            form.reset(); // Czyści formularz
-          } else {
-            alert("❌ Błąd podczas wysyłania wiadomości. Spróbuj ponownie.");
-          }
-        } catch (error) {
-          console.error("Błąd:", error);
-          alert("⚠ Wystąpił problem. Spróbuj później.");
-        }
-      });
-    });
-  </script>
-
 </body>
 
 </html>
