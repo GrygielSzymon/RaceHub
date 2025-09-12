@@ -57,7 +57,7 @@ Aby uruchomić RaceHub lokalnie:
    ```bash
    git clone https://github.com/GrygielSzymon/RaceHub.git
    ```
-2. Otwórz plik `index.html w przeglądarce.  
+2. Otwórz plik index.html w przeglądarce.  
 3. Gotowe 🎉
 
 ---
@@ -74,3 +74,4 @@ Aby uruchomić RaceHub lokalnie:
 📧 szymongrygiel11@gmail.com  
 
 Jeśli podoba Ci się projekt, zostaw ⭐ star na GitHubie! 🚀  
+
